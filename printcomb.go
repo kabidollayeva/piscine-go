@@ -10,9 +10,9 @@ func PrintComb() {
 				z01.PrintRune(rune(j))
 				z01.PrintRune(rune(k))
 				if i < 55 {
-					z01.PrintRune(',')
+					z01.PrintRune(44)
 				} else {
-					z01.PrintRune('\n')
+					z01.PrintRune(32)
 
 				}
 			}
