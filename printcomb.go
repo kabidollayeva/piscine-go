@@ -11,6 +11,7 @@ func PrintComb() {
 				z01.PrintRune(k)
 				if i < 55 {
 					z01.PrintRune(44)
+					z01.PrintRune(32)
 				} else {
 					z01.PrintRune(' ')
 
