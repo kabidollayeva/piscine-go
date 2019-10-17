@@ -1,11 +1,17 @@
 package piscine
 
-import "github.com/01-edu/z01"
-
-func StrRev(s string) string{
+func StrRev(s string) string {
 	aString := []rune(s)
-	for i, j := 0; len(aString)-1; i < j; i, j = i + 1, j - 1 {
-		aString[i], aString[j] = aString[j], aString[i]
+	var len int = 0
+	var str rune
+	for v := range aString {
+		len++
+		v = v
+	}
+	for i := 0; i < len/2; i++ {
+		str = aString[i]
+		aString[i] = aString[len-i-1]
+		aString[len-i-1] = str
 	}
 	return string(aString)
 }
