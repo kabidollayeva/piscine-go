@@ -1,6 +1,10 @@
 package piscine
 
 func StrLen(str string) int {
-
-	return Length(str)
+	count := 0
+	for _, aString := range str {
+		count++
+		_ = letter
+	}
+	return count
 }
