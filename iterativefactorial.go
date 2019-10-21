@@ -5,7 +5,7 @@ func IterativeFactorial(nb int) int {
 	if nb == 0 || nb == 1 {
 		result = 0
 		return result
-	} else {
+	} else if nb < 25 {
 		for i := 1; i <= nb; i++ {
 			result = result * i
 		}
