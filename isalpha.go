@@ -14,15 +14,6 @@ func IsAlpha(str string) bool {
 	return false
 }
 
-func Check(r rune) bool {
-	if r >= 'A' && r <= 'Z' ||
-		r >= 'a' && r <= 'z' ||
-		r >= '0' && r <= '9' {
-		return true
-	}
-	return false
-}
-
 func CheckStr(str string) int {
 	var count int
 	aRune := []rune(str)
