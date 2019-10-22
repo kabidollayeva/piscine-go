@@ -12,6 +12,8 @@ func PrintNbrInOrder(n int) {
 		n /= 10
 	}
 	for i := range a {
-		z01.PrintRune(rune('0' + a[i]))
+		for i = 0; i <= n; i++ {
+			z01.PrintRune(rune('0' + a[i]))
+		}
 	}
 }
