@@ -9,21 +9,21 @@ func Index(s string, toFind string) int {
 		}
 	}
 	for _, j := range toFind {
-		for k, j1 := range s {
-			if j == j1 {
+		for i2, j2 := range s {
+			if j == j2 {
 				if len > 1 {
-					for m := 0; m < len; m++ {
-						if s[k+m] == toFind[m] {
+					for k := 0; k < len; k++ {
+						if s[i2+k] == toFind[k] {
 							c++
 						} else {
 							return -1
 						}
 					}
 					if c == len {
-						return k
+						return i2
 					}
 				} else if len == 1 {
-					return k
+					return i2
 				} else {
 					return -1
 				}
@@ -32,7 +32,6 @@ func Index(s string, toFind string) int {
 		if c <= 0 {
 			return -1
 		}
-
 	}
 	return len
 }
