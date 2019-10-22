@@ -7,7 +7,7 @@ func CheckU(r rune) bool {
 	return false
 }
 
-func IsLower(str string) bool {
+func IsUpper(str string) bool {
 	runes := []rune(str)
 	counter := 0
 	for _, letter := range runes {
