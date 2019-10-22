@@ -9,10 +9,11 @@ func CheckP(r rune) bool {
 
 func IsPrintable(str string) bool {
 	runes := []rune(str)
-	counter := 0
 	for _, letter := range runes {
 		if CheckP(letter) {
 			return false
 		}
+
+	}
 	return true
 }
