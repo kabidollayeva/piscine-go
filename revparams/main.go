@@ -8,7 +8,11 @@ import (
 
 func main() {
 	arg := os.Args
-	for i := len(arg) - 1; i >= 1; i-- {
+	count := 0
+	for range arg {
+		count++
+	}
+	for i := count - 1; i >= 1; i-- {
 		str := []string(arg)
 		runes := []rune(str[i])
 		for _, word := range runes {
